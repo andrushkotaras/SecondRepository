@@ -42,10 +42,43 @@ public class java123 {
         int number5 = n5.nextInt();
 
         if (number5 % 2 == 0){
-            System.out.println("Число парне");
+            System.out.println("Число " + number5 + " - парне");
         }
         else {
-            System.out.println("Число не парне");
+            System.out.println("Число " + number5 + " - не парне");
+        }
+
+        System.out.print("Введіть порядковий день тижня: ");
+
+        Scanner d1 = new Scanner(System.in);
+        int day = d1.nextInt();
+
+        switch (day) {
+            case 1 :
+                System.out.println("Понеділок");
+                break;
+            case 2 :
+                System.out.println("Вівторок");
+                break;
+            case 3 :
+                System.out.println("Середа");
+                break;
+            case 4 :
+                System.out.println("Четвер");
+                break;
+            case 5 :
+                System.out.println("П'ятниця");
+                break;
+            case 6 :
+                System.out.println("Субота");
+                break;
+            case 7 :
+                System.out.println("Неділя");
+                break;
+            default:
+                System.out.println("Ваше число не є в проміжку від 1 до 7");
+                break;
+
         }
 
     }
