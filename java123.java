@@ -81,5 +81,34 @@ public class java123 {
 
         }
 
+        System.out.print("Введіть оцінку за шкалою ECTS: ");
+
+        Scanner m = new Scanner(System.in);
+        String mark = m.next();
+
+        switch (mark) {
+            case "a","A" :
+                System.out.println( mark + " - is excellent!");
+                break;
+            case "b","B" :
+                System.out.println(mark + " - is very good!");
+                break;
+            case "c","C" :
+                System.out.println(mark + " - is good!");
+                break;
+            case "d","D" :
+                System.out.println(mark + " - is fair");
+                break;
+            case "e","E" :
+                System.out.println(mark + " - is poor");
+                break;
+            case "f","F" :
+                System.out.println(mark + " - це 10 год тюрми");
+                break;
+            default:
+                System.out.println("Ви ввели не коректний символ");
+                break;
+        }
+
     }
 }
