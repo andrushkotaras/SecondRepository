@@ -103,7 +103,7 @@ public class java123 {
                 System.out.println(mark + " - is poor");
                 break;
             case "f","F" :
-                System.out.println(mark + " - це 10 год тюрми");
+                System.out.println(mark + " - це 10 год тюрми"); // https://vm.tiktok.com/ZM2h4DLcB/
                 break;
             default:
                 System.out.println("Ви ввели не коректний символ");
