@@ -1,15 +1,29 @@
+import java.util.Objects;
 public class SecondRepository {
     public static void main(String[] args) {
-        {
-            System.out.println("Parent main 1");
-        }
+        System.out.println("main 8");
+        Child object = new Child( 7, 8);
+
+    }
+    {
+        System.out.println("Usual bloc of parent cod 9");
     }
 
     static {
-        System.out.println("Parent static ..");
+        System.out.println("Parent 1");
     }
-    {
-        System.out.println("dssd");
+
+    static {
+        System.out.println("Parent 2");
+    }
+    public static int pm = parentMethod();
+
+    private static int parentMethod(){
+        System.out.println("Parent 3");
+        return 30;
+    }
+    static {
+        System.out.println("Parent 4");
     }
 
 }
