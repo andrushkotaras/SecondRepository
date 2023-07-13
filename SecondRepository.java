@@ -4,6 +4,12 @@ public class SecondRepository {
         System.out.println("main 8");
         Child object = new Child( 7, 8);
 
+        // Дз №13
+        Students medStudent = new MedicalStudents("m", 5555);
+        medStudent.getYearsOfStudy();
+        Students dentStudent = new DentalStudents("f", 7777);
+        dentStudent.fullInfo();
+
     }
     {
         System.out.println("Usual bloc of parent cod 9");

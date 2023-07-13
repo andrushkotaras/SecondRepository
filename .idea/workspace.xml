@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26bccd7-9b05-4061-aa37-eee867d10226" name="Changes" comment="Create README.md">
+      <change afterPath="$PROJECT_DIR$/DentalStudents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/MedicalStudents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Students.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Child.java" beforeDir="false" afterPath="$PROJECT_DIR$/Child.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondRepository.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
