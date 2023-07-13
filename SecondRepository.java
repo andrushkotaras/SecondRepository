@@ -9,6 +9,11 @@ public class SecondRepository {
         medStudent.getYearsOfStudy();
         Students dentStudent = new DentalStudents("f", 7777);
         dentStudent.fullInfo();
+        Teachers teacher = new Professor("Rostyslav", "Histology");
+        teacher.getScientificDegree();
+        teacher.fullInfo();
+        Teachers teacher2 = new Docent("Oleg", "Anatomy");
+        teacher2.fullInfo();
 
     }
     {

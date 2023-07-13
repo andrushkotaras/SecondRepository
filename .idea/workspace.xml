@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26bccd7-9b05-4061-aa37-eee867d10226" name="Changes" comment="Create README.md">
-      <change afterPath="$PROJECT_DIR$/DentalStudents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MedicalStudents.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Students.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Docent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Professor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Teachers.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/SecondRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/SecondRepository.java" afterDir="false" />
     </list>
@@ -109,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688988269181</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Create README.md">
+      <created>1689276491506</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1689276491506</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
