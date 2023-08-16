@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d26bccd7-9b05-4061-aa37-eee867d10226" name="Changes" comment="Create README.md">
-      <change afterPath="$PROJECT_DIR$/StreamApi/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SurNames.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Java123.iml" beforeDir="false" afterPath="$PROJECT_DIR$/SecondRepository.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StreamApi/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/StreamApi/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -123,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1689278601608</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Create README.md">
+      <created>1692132834871</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1692132834871</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
