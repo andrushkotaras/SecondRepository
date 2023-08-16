@@ -16,7 +16,7 @@ public class Main {
         List<String> surNames = Stream.of("Andrushko", "Bulavin", "Gents","Andrushko", "Bulavin", "Gents",
                 "Andrushko", "Bulavin", "Gents","Andrushko", "Bulavin", "Gents").toList();
         List<String> stream = surNames.stream()
-                .collect(Collectors.toMap(str -> str, str -> str.??????));
+                .collect(Collectors.toMap(str -> str, str -> str./*?думав_2_дня_і_не_придумав?*/));
 
 
 
