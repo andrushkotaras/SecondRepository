@@ -1,25 +1,48 @@
 package StreamApi;
-import java.util.*;
-import java.util.function.Function;
-import java.util.stream.Collectors;
-import java.util.stream.Stream;
-import java.util.Arrays;
-import java.util.Map;
+
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.FileReader;
+import java.io.FileWriter;
+import java.io.IOException;
 
 public class Main {
     public static void main(String[] args) {
+        String fileName = "data.txt";
+        String dataToSave = "Це приклад даних для збереження у файлі.";
 
-        List<String> surNames = Stream.of("Andrushko", "Bulavin", "Gents","Andrushko", "Bulavin", "Gents",
-                "Andrushko", "Bulavin", "Gents","Andrushko", "Bulavin", "Gents","Pavlenko","Pavlenko","Pavlenko","Andrushko", "Bulavin", "Gents","Andrushko", "Bulavin").toList();
-        Map<String, Long> result = surNames.stream()
-                .collect(Collectors.groupingBy(Function.identity(), Collectors.counting()));
-        System.out.println(result);
+        // Збереження даних у файл
+        saveToFile(fileName, dataToSave);
+        System.out.println("Дані збережено у файлі: " + fileName);
 
-
-        List<Integer> numbers = Arrays.asList(2, 3, 4, 4, 45, 6, 7, 8);
-        int sum = numbers.stream().mapToInt(Integer::intValue).sum();
-        System.out.println(sum);
-
+        // Зчитування даних з файлу та виведення на екран
+        String readData = readFromFile(fileName);
+        System.out.println("Дані, прочитані з файлу " + fileName + ":");
+        System.out.println(readData);
     }
-}
 
+    // Зберігає отриману строку у файл
+    public static void saveToFile(String fileName, String content) {
+        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
+            writer.write(content);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // Зчитує дані з файлу та повертає його користувачу
+    public static String readFromFile(String fileName) {
+        StringBuilder content = new StringBuilder();
+        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
+            String line;
+            while ((line = reader.readLine()) != null) {
+                content.append(line).append("\n");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return content.toString();
+    }
+
+
+}
