@@ -1,48 +1,34 @@
 package StreamApi;
 
-import java.io.BufferedReader;
-import java.io.BufferedWriter;
-import java.io.FileReader;
-import java.io.FileWriter;
-import java.io.IOException;
-
-public class Main {
+public class Main{
     public static void main(String[] args) {
-        String fileName = "data.txt";
-        String dataToSave = "Це приклад даних для збереження у файлі.";
+        // Створюємо перший потік і запускаємо його
+        Thread thread1 = new Thread(new MyRunnable("Потік 1"));
+        thread1.start();
 
-        // Збереження даних у файл
-        saveToFile(fileName, dataToSave);
-        System.out.println("Дані збережено у файлі: " + fileName);
+        // Створюємо другий потік і запускаємо його
+        Thread thread2 = new Thread(new MyRunnable("Потік 2"));
+        thread2.start();
+    }
+}
 
-        // Зчитування даних з файлу та виведення на екран
-        String readData = readFromFile(fileName);
-        System.out.println("Дані, прочитані з файлу " + fileName + ":");
-        System.out.println(readData);
+class MyRunnable implements Runnable {
+    private String threadName;
+
+    public MyRunnable(String name) {
+        this.threadName = name;
     }
 
-    // Зберігає отриману строку у файл
-    public static void saveToFile(String fileName, String content) {
-        try (BufferedWriter writer = new BufferedWriter(new FileWriter(fileName))) {
-            writer.write(content);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    // Зчитує дані з файлу та повертає його користувачу
-    public static String readFromFile(String fileName) {
-        StringBuilder content = new StringBuilder();
-        try (BufferedReader reader = new BufferedReader(new FileReader(fileName))) {
-            String line;
-            while ((line = reader.readLine()) != null) {
-                content.append(line).append("\n");
+    @Override
+    public void run() {
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(threadName + ": " + i);
+            try {
+                // Пауза для імітації обчислень
+                Thread.sleep(100);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
-        } catch (IOException e) {
-            e.printStackTrace();
         }
-        return content.toString();
     }
-
-
 }
